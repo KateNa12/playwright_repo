@@ -14,6 +14,6 @@ export default class HomePage {
     }
 
     async openPage() {
-        await this.page.goto('https://guest:welcome2qauto@qauto.forstudy.space/');
+        await this.page.goto('/');
     }
 }
