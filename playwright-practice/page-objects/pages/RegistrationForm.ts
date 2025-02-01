@@ -20,6 +20,23 @@ export default class RegistrationForm {
         this.registerButton = page.locator('[class="btn btn-primary"]');
     }
 
+    async triggerErrorOnField(fieldName: string) {
+        const element = fieldName === 'name' ? this.nameField :
+            fieldName === 'lastName' ? this.lastNameField  :
+                fieldName === 'email' ? this.emailField:
+                    fieldName === 'password' ? this.passwordField :
+                        fieldName === 'reEnterPassword' ? this.reEnterPasswordField :
+                            null;
+
+        if (!element) {
+            throw new Error(`Invalid field name: ${fieldName}`);
+        }
+
+        await element.focus();
+        await element.blur();
+    }
+
+
     async enterName(name: string) {
         await this.nameField.fill(name);
         await this.nameField.blur();
