@@ -14,24 +14,14 @@ test.describe(("Setup user"), () => {
         garagePage = new GaragePage(page);
     });
 
-    test('Log in and save main user state', async () => {
-        const browser = await chromium.launch();
-        const context = await browser.newContext();
-
-        const page = await context.newPage();
-        // await page.goto('https://guest:welcome2qauto@qauto.forstudy.space');
-        // await page.click('button.header_signin');
-        // await page.fill('//input[@id="signinEmail"]', 'kateryna.naimark+2@gmail.com');
-        // await page.fill('//input[@id="signinPassword"]', 'pvGvlLZ1QtQuXdm');
-        // await page.click('//div[@class="modal-content"]//button[@class="btn btn-primary"]');
-
+    test('Log in and save main user state', async ({ page }) => {
 
         await homePage.openPage();
         await homePage.clickSignInButton();
         await signInForm.loginWithCredentials('kateryna.naimark+2@gmail.com', 'pvGvlLZ1QtQuXdm');
         await garagePage.verifyPageIsOpen();
 
-        await context.storageState({ path: './test-data/states/mainUserState.json' });
+        await page.context().storageState({ path: './test-data/states/mainUserState.json' });
     });
-
 });
+
