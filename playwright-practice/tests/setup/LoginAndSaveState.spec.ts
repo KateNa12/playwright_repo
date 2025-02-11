@@ -8,7 +8,7 @@ test.describe(("Setup user"), () => {
     let signInForm: SignInForm;
     let garagePage: GaragePage;
 
-    test.beforeAll(async ({ page }) => {
+    test.beforeEach(async ({ page }) => {
         homePage = new HomePage(page);
         signInForm = new SignInForm(page);
         garagePage = new GaragePage(page);
