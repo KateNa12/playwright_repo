@@ -149,8 +149,8 @@ test.describe(("Homework24 test cases"), () => {
             await registrationForm.enterName('test');
             await registrationForm.enterLastName('test');
             await registrationForm.enterEmail(`aqa+${randomNumber}@gmail.com`);
-            await registrationForm.enterPassword(process.env.USER_PASS!);
-            await registrationForm.reenterPassword(process.env.USER_PASS!);
+            await registrationForm.enterPassword('A1234567a');
+            await registrationForm.reenterPassword('A1234567a');
             await expect(registrationForm.registerButton).toBeEnabled();
             await registrationForm.clickRegisterButton();
             await expect(page.getByText('You don’t have any cars in your garage')).toBeVisible();
