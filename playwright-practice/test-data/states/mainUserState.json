@@ -1,0 +1,75 @@
+{
+  "cookies": [
+    {
+      "name": "YSC",
+      "value": "zGcH5ulsVec",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "VISITOR_INFO1_LIVE",
+      "value": "Or1NXuRUisg",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1754817191.790106,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "VISITOR_PRIVACY_METADATA",
+      "value": "CgJVQRIEGgAgRQ%3D%3D",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1754817191.790384,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__Secure-ROLLOUT_TOKEN",
+      "value": "CLLLu73I9YiINxCovc3fo7uLAxiovc3fo7uLAw%3D%3D",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1754817191.790469,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "NID",
+      "value": "521=l-iFJ_r9h3ASTDyGHEu8FbT9OCkAnz5y75TZ448fM7cJ38nzgFSpFQRxolztzHjMVC7YuuyNprhlBVClhFtUrvtOVbSXOYtIEJtNDqNpiBtatyGYVV5qh274-QculOaKhuY-lJYJFw3KXjmsUssSOhSHzgQOwUwf3odN956N2oBVJuYkLDO1BFjb_6Dj",
+      "domain": ".google.com",
+      "path": "/",
+      "expires": 1755076393.748853,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sid",
+      "value": "s%3A5MdIg6iwpAAXpPrRZRi6HEj3XXxVysdR.xccHMjeqzEt4Jxwo7f10hgEJB8JjQ01eBjsKMTIYFjY",
+      "domain": ".forstudy.space",
+      "path": "/",
+      "expires": 1739351594.015519,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.youtube.com",
+      "localStorage": [
+        {
+          "name": "ytidb::LAST_RESULT_ENTRY_KEY",
+          "value": "{\"data\":{\"hasSucceededOnce\":true},\"expiration\":1741857192790,\"creation\":1739265192790}"
+        }
+      ]
+    }
+  ]
+}
