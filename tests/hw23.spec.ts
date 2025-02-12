@@ -1,7 +1,7 @@
 import { test, expect, Locator } from '@playwright/test';
 
 
-test.describe(("Test the Registration form using Playwright"), () => {
+test.describe(("Testing the Registration form using Playwright"), () => {
   let signUpButton : Locator;
   let nameField : Locator;
   let lastNameField : Locator;
